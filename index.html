@@ -1,0 +1,114 @@
+<html>
+<head>
+    <title>Portal Da Array</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <p>
+        <h2>
+            O Que é Uma Array?
+        </h2>
+    </p>
+    <p>****Um array é uma coleção de tipos de variáveis similares, as quais podem conter mais de um valor ao mesmo tempo.***</p>
+    <p></p>
+    <hr>
+    <!--pergunta 1-->
+    <p>Como Declarar Uma Array?</p>
+    <h4>Declaração De Array, Exemplos:</h4>
+    <p>
+        <h4 id="declararArray"> </h4>
+        <img src="1.png">
+    </p>
+
+    <p></p>
+    <hr>
+
+    <!--pergunta 2-->
+    <p>Como Buscar o Primeiro Element (elemento) de Um Array?</p>
+    <h4>Busca De Primeiro Element, Exemplos:</h4>
+    <p>
+    <h4 id="elementSearch"> </h4>
+    <img src="2.png">
+    </p>
+
+    <p></p>
+    <hr>
+
+    <!--pergunta 3-->
+    <p>Como Buscar o Segundo Element (elemento) de Um Array?</p>
+    <h4>Busca De Segundo Element, Exemplos:</h4>
+    <p>
+    <h4 id="elementSearch1"> </h4>
+    <img src="3.png">
+    </p>
+
+    <p></p>
+    <hr>
+
+    <!--pergunta 4-->
+    <p>Como Buscar o Terceiro Element (elemento) de Um Array?</p>
+    <h4>Busca De Terceiro Element, Exemplos:</h4>
+    <p>
+    <h4 id="elementSearch2"> </h4>
+    <img src="4.png">
+    </p>
+
+
+    <p></p>
+    <hr>
+
+    <!--pergunta 5-->
+    <p>Como Buscar o Comprimento de Um Array?</p>
+    <h4>Busca De Comprimento, Exemplos:</h4>
+    <p>
+    <h4 id="lengthSearch"> </h4>
+    <img src="5.png">
+    </p>
+
+    <p></p>
+    <hr>
+
+    <!--pergunta 6-->
+    <p>Como Utilizar o Loop Usando Um Array?</p>
+    <h4>Uso De Loop, Exemplos:</h4>
+    <p>
+    <h4 id="Looping"> </h4>
+    <img src="6.png">
+    </p>
+
+    <script>
+        //resposta 1
+        var games = ["Fortnite", " Minecraft", " Roblox", " COD Warzone", " PUBG", " PK XD"];
+        console.log(games);
+        document.getElementById("declararArray").innerHTML = games;
+
+        //resposta 2
+        var elemento = games[0];
+        console.log(elemento);
+        document.getElementById("elementSearch").innerHTML = elemento;
+
+        //resposta 3
+        var elemento1 = games[1];
+        console.log(elemento1);
+        document.getElementById("elementSearch1").innerHTML = elemento1;
+
+        //resposta 4
+        var elemento2 = games[2];
+        console.log(elemento2);
+        document.getElementById("elementSearch2").innerHTML = elemento2;
+
+        //resposta 5
+        var length = games.length;
+        console.log(length);
+        document.getElementById("lengthSearch").innerHTML = length;
+
+        //resposta 6
+        var loop_for = " ";
+        for(indice = 0; indice < games.length; indice++) {
+            console.log(games[indice]);
+            loop_for = loop_for + games[indice]+"<br>";
+        }
+        document.getElementById("Looping").innerHTML = loop_for;
+    </script>
+</body>
+</html>
